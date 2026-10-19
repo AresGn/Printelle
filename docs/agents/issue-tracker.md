@@ -1,6 +1,6 @@
 # Suivi des tickets : GitHub
 
-Les tickets et les specs de ce dépôt sont des issues GitHub (`SINDA-SARL/printelle`). Toutes les opérations passent par la CLI `gh`.
+Les tickets et les specs de ce dépôt sont des issues GitHub (`AresGn/printelle`). Toutes les opérations passent par la CLI `gh`.
 
 ## Conventions
 
@@ -48,13 +48,13 @@ Les tickets « décision » (ADR, valeurs du client) portent `ready-for-human` e
 
 ## Trouver et prendre un ticket
 
-- Mes tickets, par application : `https://github.com/SINDA-SARL/printelle/issues?q=is%3Aopen+label%3Aapp%3A<nom>` ; en ligne de commande `gh issue list --state open --label app:<nom>`.
+- Mes tickets, par application : `https://github.com/AresGn/printelle/issues?q=is%3Aopen+label%3Aapp%3A<nom>` ; en ligne de commande `gh issue list --state open --label app:<nom>`.
 - Un ticket est **libre** quand il n'a pas d'assigné et que tous ses bloqueurs sont fermés (la page du ticket affiche « Blocked by »). `make backlog` produit la vue globale.
 - Le prendre : `gh issue edit <n> --add-assignee @me`, puis une branche `type/<n>-sujet` et **une PR par ticket** (`CONTRIBUTING.md` §2).
 
 ## Dépendances (blocage)
 
-Les **dépendances natives** de GitHub sont la représentation de référence. Ajouter un lien : `gh api --method POST repos/SINDA-SARL/printelle/issues/<enfant>/dependencies/blocked_by -F issue_id=<id-base-de-données-du-bloqueur>`, où l'identifiant est numérique (`gh api repos/SINDA-SARL/printelle/issues/<n> --jq .id`), pas le numéro ni le `node_id`. À défaut, une ligne `Bloqué par : #<n>, #<n>` en tête du corps. Un ticket est libre quand tous ses bloqueurs sont fermés.
+Les **dépendances natives** de GitHub sont la représentation de référence. Ajouter un lien : `gh api --method POST repos/AresGn/printelle/issues/<enfant>/dependencies/blocked_by -F issue_id=<id-base-de-données-du-bloqueur>`, où l'identifiant est numérique (`gh api repos/AresGn/printelle/issues/<n> --jq .id`), pas le numéro ni le `node_id`. À défaut, une ligne `Bloqué par : #<n>, #<n>` en tête du corps. Un ticket est libre quand tous ses bloqueurs sont fermés.
 
 ## Gabarit d'un ticket
 

@@ -26,7 +26,7 @@ Windows : travailler sous WSL 2 (les scripts et le `Makefile` sont en bash).
 ## 3. Cloner et préparer
 
 ```bash
-git clone https://github.com/SINDA-SARL/printelle.git && cd printelle
+git clone https://github.com/AresGn/printelle.git && cd printelle
 make hooks            # une fois par clone : active le contrôle avant commit et avant push
 make help             # liste les commandes
 make setup            # installe les dépendances des applications initialisées

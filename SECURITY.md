@@ -3,7 +3,7 @@
 ## Signaler une vulnérabilité
 
 **Ne publiez pas de faille dans une issue ou une PR publique.** Utilisez le signalement privé de GitHub :
-<https://github.com/SINDA-SARL/printelle/security/advisories/new> (onglet *Security* du dépôt, bouton *Report a vulnerability*).
+<https://github.com/AresGn/printelle/security/advisories/new> (onglet *Security* du dépôt, bouton *Report a vulnerability*).
 
 À REMPLIR: activer « Private vulnerability reporting » dans Settings > Code security du dépôt (sans cela, le lien ci-dessus ne fonctionne pas), puis supprimer cette ligne. Si le signalement privé n'est pas disponible, indiquer ici une adresse de contact dédiée.
 
