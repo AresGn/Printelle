@@ -1,0 +1,23 @@
+# Général
+.DS_Store
+.idea/
+.vscode/
+*.log
+.env
+.env.*
+!.env.example
+*.dump
+*.sql.gz
+
+# Brouillons de tickets et sorties d'outils locaux
+brouillons-tickets/
+graphify-out/
+
+# Fichiers propres à un poste d'agent
+.claude/settings.local.json
+
+# apps/web (Node / TypeScript)
+apps/web/node_modules/
+apps/web/.next/
+apps/web/dist/
+apps/web/coverage/
